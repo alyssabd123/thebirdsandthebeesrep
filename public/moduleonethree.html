@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7ed321;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .quiz-container {
+            background-color: #b8e986;
+            border-radius: 10px;
+            padding: 20px;
+            width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 0 auto;
+            background-color: #7f58af;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #5f4490;
+        }
+        .decorations {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 300px;
+        }
+        .decorationsGame {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            left: 100px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Tutorial Quiz</h1>
+        <div class="question">
+            <p><strong>Question 1</strong></p>
+            <p>How many stages of puberty are there?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> a) 7</label>
+                <label><input type="radio" name="q1" value="b"> b) 3</label>
+                <label><input type="radio" name="q1" value="c"> c) 10</label>
+                <label><input type="radio" name="q1" value="d"> d) 5</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>Question 2</strong></p>
+            <p>True or False? I will be learning about both male and female sexual reproductive health.</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> a) True</label>
+                <label><input type="radio" name="q2" value="b"> b) False</label>
+            </div>
+        </div>
+
+        <button class="submit-btn">Submit</button>
+        <button class="exit-btn" onclick="window.location.href='index.html';">Exit to Home</button>
+    </div>
+
+    <div class="decorations">
+        <img src="images/flyingBees.png" alt="Bee" style="width: 150px;">
+        <img src="images/birds.png" alt="Birds" style="width: 200px;">
+    </div>
+    <div class="decorationsGame"></div>
+        <img src="images/game.avif" alt="Game" style="width: 500px;">
+    </div>
+</body>
+</html>
