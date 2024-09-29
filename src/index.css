@@ -75,42 +75,19 @@ h1::before {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Play button */
-.play-button {
-  margin: 40px auto;
-  width: 80px;
-  height: 80px;
-  background-color: transparent;
-  border: 2px solid black;
-  border-radius: 50%;
-  position: relative;
-  cursor: pointer;
-}
-
-.play-button::before {
-  content: "\25B6"; /* Unicode for play button */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 36px;
-  color: #000;
-}
-
 /* Birds and Bees images */
-.birds, .bees {
-  position: absolute;
-  width: 150px;
-}
 
 .birds {
-  top: 20px;
+  top: 10px !important;
   left: 20px;
+  position: absolute;
+  width: 100px;
 }
 
 .bees {
   top: 20px;
   right: 20px;
+  position: absolute;
 }
 
 .bee {
