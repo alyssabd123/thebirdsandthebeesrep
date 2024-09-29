@@ -56,27 +56,24 @@
             padding: 50px;
         }
 
-        /* Curved text for "Welcome to SexEd!" */
+        /* Styling for the "Welcome to SexEd!" heading */
         h1 {
             margin-top: 20px;
             font-size: 48px;
-            color: #000;
+            color: rgb(0, 0, 0);
             font-weight: bold;
             font-family: 'Comic Sans MS', cursive;
             position: relative;
         }
 
-        h1::before {
-            content: "Welcome to SexEd!";
-            position: absolute;
-            top: -80px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 48px;
-            color: #000;
-            font-weight: bold;
-            font-family: 'Comic Sans MS', cursive;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        /* New paragraph text below the heading */
+        .welcome-paragraph {
+            margin-top: 10px; /* Space between the heading and paragraph */
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            font-family: 'Arial', sans-serif;
+            font-weight: normal;
+            text-align: center;
         }
 
         /* Play button */
@@ -109,12 +106,12 @@
             width: 150px;
         }
 
-    .birds-bottom-right {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        width: 150px; /* Adjust size as needed */
-    }
+        .birds-bottom-right {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 150px; /* Adjust size as needed */
+        }
 
         .bees {
             position: absolute;
@@ -160,13 +157,13 @@
             color: black;
             text-decoration: none;
         }
+
         .footer-icon {
             width: 30px;  /* Adjust the size for all icons */
             height: 30px;
             margin: 0 10px; /* Spacing between icons */
             vertical-align: middle; /* Align the icons with text */
-}
-
+        }
 
         /* Bees flying dotted line (Optional for additional style) */
         .bee-line {
@@ -177,6 +174,7 @@
             height: 100px;
             background: url('bee-line.png') no-repeat center;
         }
+        
     </style>
 </head>
 <body>
@@ -199,9 +197,10 @@
         <img class="bees" src="images/flyingBees.png" alt="Flying bees">
         <img class="birds-bottom-right" src="images/birds.png" alt="Flying birds2">
 
-
         <!-- Welcome heading -->
         <h1></h1>
+        <!-- New paragraph under the heading -->
+        <p class="welcome-paragraph">We are excited to help you learn about sexual education in a fun and engaging way. Explore our courses and resources designed for all age groups.</p>
 
         <!-- Play button in the center -->
         <div class="play-button"></div>
@@ -213,7 +212,6 @@
             <img src="images/tree2.png" alt="Tree">
         </div>
 
-        
         <img class="bee" src="images/beeFlying.png" alt="Flying bee">
     </div>
 
@@ -224,7 +222,6 @@
         <img src="images/twitter.png" class="footer-icon"> <!-- Twitter -->
         <img src="images/Facebook.png" class="footer-icon"> <!-- Facebook -->
     </footer>
-    
 
 </body>
 </html>
