@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css"> <!-- Link to the CSS file -->
     <style>
         body {
+            margin-top: 100px;
             margin: 0;
             padding: 0;
             background-color: #f9edb8; /* Light yellow background */
@@ -109,6 +110,13 @@
             width: 150px;
         }
 
+    .birds-bottom-right {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 150px; /* Adjust size as needed */
+    }
+
         .bees {
             position: absolute;
             top: 50px;
@@ -119,8 +127,9 @@
         .bee {
             position: absolute;
             left: 10px;
-            bottom: 100px;
-            width: 50px;
+            bottom: 250px;
+            width: 350px !important; /* Force the size with !important */
+            height: auto; /* Maintain aspect ratio */
         }
 
         /* Trees */
@@ -152,6 +161,13 @@
             color: black;
             text-decoration: none;
         }
+        .footer-icon {
+            width: 30px;  /* Adjust the size for all icons */
+            height: 30px;
+            margin: 0 10px; /* Spacing between icons */
+            vertical-align: middle; /* Align the icons with text */
+}
+
 
         /* Bees flying dotted line (Optional for additional style) */
         .bee-line {
@@ -180,33 +196,36 @@
     <!-- Main content area -->
     <div class="content">
         <!-- Birds and Bees -->
-        <img class="birds" src="birds.png" alt="Flying birds">
-        <img class="bees" src="bees.png" alt="Flying bees">
+        <img class="birds" src="images/birds.png" alt="Flying birds">
+        <img class="bees" src="images/flyingBees.png" alt="Flying bees">
+        <img class="birds-bottom-right" src="images/birds.png" alt="Flying birds2">
+
 
         <!-- Welcome heading -->
-        <h1>SexEd</h1>
+        <h1></h1>
 
         <!-- Play button in the center -->
         <div class="play-button"></div>
 
         <!-- Trees at the bottom -->
         <div class="trees">
-            <img src="tree.png" alt="Tree">
-            <img src="tree.png" alt="Tree">
-            <img src="tree.png" alt="Tree">
+            <img src="images/tree2.png" alt="Tree">
+            <img src="images/tree2.png" alt="Tree">
+            <img src="images/tree2.png" alt="Tree">
         </div>
 
-        <!-- Small bee image -->
-        <img class="bee" src="bee.png" alt="Flying bee">
+        
+        <img class="bee" src="images/beeFlying.png" alt="Flying bee">
     </div>
 
     <!-- Footer with social media links -->
     <footer>
         <p>Follow us!</p>
-        <a href="#">&#x1F30D;</a> <!-- Instagram -->
-        <a href="#">&#128038;</a> <!-- Twitter -->
-        <a href="#">&#127759;</a> <!-- Facebook -->
+        <img src="images/Instagram.png" class="footer-icon"> <!-- Instagram -->
+        <img src="images/twitter.png" class="footer-icon"> <!-- Twitter -->
+        <img src="images/Facebook.png" class="footer-icon"> <!-- Facebook -->
     </footer>
+    
 
 </body>
 </html>
