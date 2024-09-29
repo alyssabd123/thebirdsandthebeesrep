@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf5ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .image-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #e2e2e2;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .image-placeholder svg {
+            width: 80px;
+            height: 80px;
+            fill: #888;
+        }
+        .content {
+            flex: 1;
+            max-width: 100%; 
+        }
+        .content h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .content .date {
+            color: #888;
+            font-size: 14px;
+        }
+        .content p {
+            color: #333;
+            line-height: 1.5;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #6b4fa1;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .download-btn:hover {
+            background-color: #5a418d;
+        }
+        .nav-buttons {
+            margin-top: 465px;
+        }
+        .nav-buttons a {
+            background-color: #6b4fa1;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .nav-buttons a:hover {
+            background-color: #5a418d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <circle cx="75" cy="75" r="20"></circle>
+                <rect x="15" y="65" width="30" height="30"></rect>
+                <polygon points="50,15 75,60 25,60"></polygon>
+            </svg>
+        </div>
+        <div class="content">
+            <h1>Headline</h1>
+            <div class="date">Published date</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#" class="download-btn">Download</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="moduleonetwo.html">Next</a>
+        </div>
+    </div>
+</body>
+</html>
