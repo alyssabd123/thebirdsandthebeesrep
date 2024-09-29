@@ -151,11 +151,11 @@ footer a {
 }
 
 /* Bees flying dotted line (Optional for additional style) */
-.bee-line {
+/* .bee-line {
   position: absolute;
   top: 80px;
   right: 200px;
   width: 200px;
   height: 100px;
   background: url('bee-line.png') no-repeat center;
-}
+} */

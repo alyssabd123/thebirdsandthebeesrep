@@ -4,7 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birds and Bees</title>
-    <link rel="stylesheet" href="kids-course.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            background-color: #f3e5f5;
+            width: 200px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        nav ul li {
+            margin: 15px 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        nav ul li.active {
+            background-color: #e1bee7;
+            border-radius: 10px;
+        }
+
+        nav ul li span {
+            margin-right: 10px;
+        }
+
+        /* Main content styles */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            margin-top: 0;
+            font-size: 2.5rem;
+        }
+
+        .module-section {
+            margin: 20px 0;
+        }
+
+        .module-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .module-cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            background-color: #eeeeee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .card img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .card-label {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .arrow {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #757575;
+        }
+    </style>
 </head>
 <body>
 
@@ -31,16 +151,16 @@
         <div class="module-section">
             <h2>Intro Module</h2>
             <div class="module-cards">
-                <div class="card">
-                    <img src="flower.png" alt="Flower" class="card-img">
+                <a href="moduleoneone.html" class="card">
+                    <img src="flower.png" alt="Flower">
                     <div class="card-label">THE WHY</div>
-                </div>
+                </a>
                 <div class="card">
-                    <img src="tree.png" alt="Tree" class="card-img">
+                    <img src="tree.png" alt="Tree">
                     <div class="card-label">Label</div>
                 </div>
                 <div class="card">
-                    <img src="shapes.png" alt="Shapes" class="card-img">
+                    <img src="shapes.png" alt="Shapes">
                     <div class="card-label">Label</div>
                 </div>
                 <button class="arrow">&#x2192;</button>
@@ -52,16 +172,19 @@
             <h2>Module One</h2>
             <div class="module-cards">
                 <div class="card">
-                    <img src="butterfly.png" alt="Butterfly" class="card-img">
+                    <img src="butterfly.png" alt="Butterfly">
                 </div>
                 <div class="card">
-                    <img src="bee.png" alt="Bee" class="card-img">
+                    <img src="bee.png" alt="Bee">
                 </div>
                 <div class="card">
-                    <img src="shapes.png" alt="Shapes" class="card-img">
+                    <img src="shapes.png" alt="Shapes">
                 </div>
                 <button class="arrow">&#x2192;</button>
             </div>
+        </div>
+        <div class="button-container">
+            <a href="index.html" class="home-button">Back to Home</a>
         </div>
     </div>
 
