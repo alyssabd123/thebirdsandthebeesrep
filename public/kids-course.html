@@ -70,7 +70,7 @@
 
         h1 {
             font-family: 'Pacifico', cursive;
-            text-align: center;
+            text-align: start;
             margin-top: 0;
             font-size: 2.5rem;
         }
@@ -124,6 +124,27 @@
             cursor: pointer;
             color: #757575;
         }
+        .profile-btn {
+            display: inline-block;
+    cursor: pointer;
+    text-decoration: none; /* Removes the underline from the link */
+    border-radius: 50%; /* Keeps the button circular */
+    overflow: hidden; /* Ensures the border does not overflow */
+        }
+
+        .profile-pic {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px; /* Adjust the size as needed */
+            border-radius: 50%; /* Makes the image circular */
+            display: block;
+            transition: border 0.3s; /* Smooth transition for border */
+        }
+
+        /* Hover effect */
+        .profile-btn:hover .profile-pic {
+            border: 2px solid #6b4fa1; /* Add a border with color and width */
+        }
+
     </style>
 </head>
 <body>
@@ -131,8 +152,10 @@
     <!-- Sidebar Menu -->
     <div class="sidebar">
         <div class="profile">
-            <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
-        </div>
+            <button class="profile-btn">
+                <img src="woman.png" alt="Profile Picture" class="profile-pic">
+            </button>
+        </div>        
         <nav>
             <ul>
                 <li class="active"><span class="menu-icon">&#9733;</span>Intro</li>
@@ -152,16 +175,16 @@
             <h2>Intro Module</h2>
             <div class="module-cards">
                 <a href="moduleoneone.html" class="card">
-                    <img src="flower.png" alt="Flower">
+                    <img src="pinkFlower.jpeg" alt="Flower">
                     <div class="card-label">THE WHY</div>
                 </a>
                 <a href="moduleonetwo.html" class="card">
-                    <img src="tree.png" alt="Tree">
-                    <div class="card-label">Label</div>
+                    <img src="tree.jpeg" alt="Tree">
+                    <div class="card-label">OVERVIEW</div>
                 </a>
                 <a href="moduleonethree.html" class="card">
-                    <img src="shapes.png" alt="Shapes">
-                    <div class="card-label">Label</div>
+                    <img src="family.webp" alt="Shapes">
+                    <div class="card-label">CHECKPOINT</div>
                 </a>
                 <button class="arrow">&#x2192;</button>
             </div>
@@ -171,15 +194,18 @@
         <div class="module-section">
             <h2>Module One</h2>
             <div class="module-cards">
-                <div class="card">
-                    <img src="butterfly.png" alt="Butterfly">
-                </div>
-                <div class="card">
-                    <img src="bee.png" alt="Bee">
-                </div>
-                <div class="card">
-                    <img src="shapes.png" alt="Shapes">
-                </div>
+                <a class="card">
+                    <img src="caterpillar.jpg" alt="Butterfly">
+                    <div class="card-label">WHAT IS PUBERTY?</div>
+                </a>
+                <a class="card">
+                    <img src="snail.jpg" alt="Bee">
+                    <div class="card-label">YOUR BODY</div>
+                </a>
+                <a class="card">
+                    <img src="shapes.jpg" alt="Shapes">
+                    <div class="card-label">CHECKPOINT</div>
+                </a>
                 <button class="arrow">&#x2192;</button>
             </div>
         </div>
